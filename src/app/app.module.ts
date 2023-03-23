@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppService } from './app.service';
 import { MatButtonModule } from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AgeCalculateComponent } from './components/age-calculate/age-calculate.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgeCalculateComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatSelectModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

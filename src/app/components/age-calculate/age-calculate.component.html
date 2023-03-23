@@ -1,0 +1,26 @@
+<!-- <div class="row">
+    <div class="input-field col m2">
+        <input type="date" [(ngModel)]="birthdate" id="txtdate">
+    </div>
+    <div class="input-field col m4">
+        <input type="number" [(ngModel)]="age" id="age">
+    </div>
+    <button (click)="CalculateAge()">Calculate Age</button>
+</div> -->
+
+<h1>Calcular la Edad ⏳</h1>
+<input type="date" [(ngModel)]="age" />
+<button type="button" (click)="ageCalculator()"> Calcular </button>
+<p *ngIf="age">Tu edad es {{ showAge }}</p>
+<br/>
+<br/>
+<br/>
+
+<input type="text" id="txtYear">
+<input type="text" id="txtMonth">
+<input type="text" id="txtDay">
+
+<button type="button" (click)="ageCalculator2()"> Calcular </button>
+<br/>
+<br/>
+<br/>
